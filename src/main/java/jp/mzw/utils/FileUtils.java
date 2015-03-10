@@ -3,11 +3,27 @@ package jp.mzw.utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class FileUtils {
+	
+
+	/**
+	 * 
+	 * @param dir
+	 * @param filename
+	 * @param content
+	 * @throws IOException
+	 */
+	public static void write(String dir, String filename, String content) throws IOException {
+		File file = new File(dir, filename);
+		FileWriter fw = new FileWriter(file);
+		fw.write(content);
+		fw.close();
+	}
 	
 	/**
 	 * 
