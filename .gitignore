@@ -6,3 +6,6 @@
 /.classpath
 /.project
 
+# Mac OS X
+.DS_Store
+
