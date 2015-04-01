@@ -1,4 +1,4 @@
-package jp.mzw.utils;
+package jp.mzw.util;
 
 import java.io.File;
 import java.net.MalformedURLException;
